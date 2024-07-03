@@ -12,12 +12,14 @@
     <p>Click below to get the different images of Dogs</p>
     <button  onclick="getDogs()">Click here</button>
     <p id="para"></p>
-    <img src="" alt="dogs" id="pic" height="300px" width="220px"> <br>
+    <img src="" alt="dogs" id="pic" onerror="this.onerror=null;this.src='default.png'" height="300px" width="220px"> <br>
+   
 
     <h3>2. Data Of Array on every Click</h3>
     <p>Click below to get the different items of array</p>
     <button onclick="getFruits()">Fruits</button>
     <p id="fruit"></p>
+
 
 
     <script src="script.js"></script>

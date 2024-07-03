@@ -16,7 +16,7 @@ const getDogs = async()=>{
     // }
      para.innerText = result;
 }
-getDogs();
+// getDogs();
 
 
 //Practice 2
