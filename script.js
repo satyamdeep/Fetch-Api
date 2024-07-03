@@ -4,30 +4,26 @@ let para = document.getElementById("para");
 let pic = document.getElementById("pic");
 
 
-
-
-
-
-
 const getDogs = async()=>{
     console.log("getting data");
     let res =await fetch(url);
     let data = await res.json();
-   
-    // console.log(data.message);
     let result = data.message;
     console.log(typeof(result));
-    if(result){
-        pic.src = result;
-    }
+    pic.src = result;
+    // if(result){
+        // pic.src = result;
+    // }
      para.innerText = result;
 }
-// getDogs();
+getDogs();
 
+
+//Practice 2
 
 let fruit = document.querySelector("#fruit");
 
-const fruits =["banana","apple","orange","mango"];
+const fruits =["banana","apple","orange","mango","Papaya"];
 
 let index= 0;
 
